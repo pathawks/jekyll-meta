@@ -2,3 +2,8 @@ pygments: true
 relative_permalinks: false
 permalink: /:categories/:title/
 repository: https://github.com/pathawks/jekyll-meta
+
+exclude:
+  - cname
+  - README.md
+  - LICENSE
