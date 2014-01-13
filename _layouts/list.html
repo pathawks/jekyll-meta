@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<section class="docs"><div class="grid"><div class="unit four-fifths"><article>
+	<h2 id="paginator">{{ page.title }}</h2>
+	<div class="mobile-side-scroller">
+	<table>
+	  <thead>
+	    <tr>
+	      <th>Variable</th>
+	      <th>Description</th>
+	    </tr>
+	  </thead>
+	  <tbody>{% for var in site.pages %}{% if var.permalink contains page.permalink %}{% if var.permalink != page.permalink %}{% if var.layout != page.layout %}{% unless var.path contains 'index.html' %}
+	    <tr>
+	      <td><p><code>{{ var.title }}</code></p></td>
+	      <td>{{ var.content | split:'</p>' | first }}</p></td>
+	    </tr>{% endunless %}{% endif %}{% endif %}{% endif %}{% endfor %}
+	  </tbody>
+	</table>
+	</div>
+</article></div></div></section>
