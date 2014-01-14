@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: mapping
-next_section: location/mapping
+prev_section: location/location
 permalink: /docs/location/mapping/
 ---
 
