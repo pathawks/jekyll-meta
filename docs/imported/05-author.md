@@ -18,7 +18,7 @@ author: John Smith
 
 <div class="note warning">
   <h5>Inconsistant Behavior</h5>
-  <p>Other importers use a more YAMLly way of importing author information.</p>
+  <p><a href='https://github.com/coolaj86/blogger2jekyll/blob/344f8ef4cdfab56fad5b02b9d0f3020f839938ef/lib/index.js#L108'>Other importers</a> use a more YAMLly way of importing author information.</p>
 </div>
 
 {% highlight yaml %}
