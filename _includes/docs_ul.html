@@ -10,10 +10,9 @@
     {% assign c = '' %}
   {% endif %}
 
-  {% for var in site.pages %}{% if var.permalink contains page.permalink %}{% if var.permalink != page.permalink %}{% if var.layout != page.layout %}{% unless var.path contains 'index.html' %}
+{% for var in site.pages %}{% if var.permalink contains item_url %}{% unless var.path contains 'index.html' %}
       <li class="{{ c }}"><a href="{{ site.baseurl }}{{ var.url }}">{{ var.title }}</a></li>
-    {% endif %}
-  {% endfor %}
+{% endunless %}{% endif %}{% endfor %} 
 
-{% endfor %}  
+{% endfor %}
 </ul>
