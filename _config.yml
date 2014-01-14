@@ -2,6 +2,7 @@ pygments: true
 relative_permalinks: false
 permalink: /:categories/:title/
 repository: https://github.com/pathawks/jekyll-meta
+baseurl: http://jekyll.pathawks.com
 
 exclude:
   - cname
