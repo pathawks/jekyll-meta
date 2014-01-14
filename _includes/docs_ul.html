@@ -11,7 +11,7 @@
   {% endif %}
 
 {% for var in site.pages %}{% if var.permalink contains item_url %}{% unless var.path contains 'index.html' %}
-      <li class="{{ c }}"><a href="{{ site.baseurl }}{{ var.url }}">{{ var.title }}</a></li>
+      <li class="{{ c }}"><a href="{{ site.baseurl }}/{{ var.url }}">{{ var.title }}</a></li>
 {% endunless %}{% endif %}{% endfor %} 
 
 {% endfor %}
